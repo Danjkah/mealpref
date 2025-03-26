@@ -1,0 +1,35 @@
+<h2>input</h2>
+
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <p>
+    <label>Your name: <input type = "text" name = "userName"> </label>
+  </p>
+  <p>
+    <label>
+      <input type = "radio" name = "choice"> Chicken
+    </label>
+
+    <label>
+      <input type = "radio" name = "choice"> Fish
+    </label>
+
+    <label>
+      <input type = "radio" name = "choice"> Vegetarian
+    </label>
+  </p>
+  <p>
+    <label><input type = 'checkbox' name = "notSpicy"> Not Spicy </label>
+  </p>
+  <p>
+
+    <label> Portion Size: </label>
+    <select name="portion">
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+
+  </p>
+
+  <button type ="submit">Submit</button>
+</form>
